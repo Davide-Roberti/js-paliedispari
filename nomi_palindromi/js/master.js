@@ -10,7 +10,7 @@ var nomeInserito = prompt('inserisci un nome per scoprire se è palindromo');
 
 function palindromo()  {
     function reverseString(str) {
-        return str.split("").reverse().join("");
+        return str.split("").reverse().join(""); //duplico la stringa aeparandola in un array di sottostringhe, ribalto l'array con reverse e lo riunisco con join
     }
     var nomeContrario = reverseString(nomeInserito)
     if (nomeInserito === nomeContrario) {
